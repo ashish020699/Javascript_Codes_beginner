@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<script > 
+		function validate() {
+			var Username = document.getElementById('text').value			
+			var regz = /0[0-9]{9}/ // curly mai no. of times you wanna repeat
+
+			if (regz.test(Username) && Username.length==11) {
+				alert("valid phone number")	}
+
+			else if (Username.length>11) {
+				alert ("Enter your number again")
+				document.getElementById('text').style.border = "solid 3px red"		}
+			else {
+				alert ("Invalid phone number")
+				document.getElementById('text').style.border = "solid 3px red"			}
+			}
+		
+	</script>
+	<form>
+		<input type="textbox" placeholder="Phone number" id = "text">
+		<label id = "textLabel" style="color: red ; visibility: hidden;">Invalid Username </label>	
+
+	<br><br>
+	
+	<button type="button" onclick="validate()">Submit</button>
+
+	</form>
+
+</body>
+</html>

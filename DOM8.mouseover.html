@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body> 
+	<h1> Don't forget to  double click :'( </h1>
+	<p>
+	1. hover <br> 
+	2. click <br>
+	3. double click
+	</p>
+	<script >
+		
+		function setNewimg() {
+
+			document.getElementById('img1').src = "got4.jpg"
+
+		}
+		
+		function setOldimg() {
+			document.getElementById('img1').src = "got3.jpg"
+
+		}
+		 function mereya() {
+		 	document.getElementById("img1").src = "https://64.media.tumblr.com/82365bae3b5b13fc4396ccf14187fc1e/tumblr_pr2xth6vjg1s77hly_500.gifv"
+		 }
+
+		function channa() {
+			document.getElementById("img1").src = "https://pbs.twimg.com/media/D52bvlSVUAAQMi3.jpg"
+		}
+
+
+	</script>
+	<img   id = 'img1' onmouseover = "setNewimg()" onmouseout = "setOldimg()"  onclick = "channa()" 
+	ondblclick="mereya()" 	src="got3.jpg" width="900px" height="700px">
+</body>
+</html>

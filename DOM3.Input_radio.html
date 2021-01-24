@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom manipulation</title>
+</head>
+<body>
+<script>
+		function fn1() 
+		{
+		var rd1 = document.getElementById('rd1');
+		var rd2 = document.getElementById('rd2');
+
+			if (rd1.checked==true) 
+				alert("Channel Selected is: "+rd1.value)
+			
+			 else if (rd2.checked==true) 
+				alert("Channel Selected is:"+rd2.value)
+			
+			else 
+				alert("No option selected")
+			 }</script>
+<!-- same group name rakhenge to ek hee option choose kar sakte hai  -->
+<input type="radio" name="grp1" value="Simple Snippets" id="rd1">Simple Snippets <br>
+<input type="radio" name="grp1" value="Telusko Learnings" id="rd2">Telusko Learning <br>
+<label>Click this button</label>
+<br><button onclick="fn1()">Click Me </button>
+
+</body>
+</html>

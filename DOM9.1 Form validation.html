@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function validate() {
+			var uname = document.getElementById('uname')
+			var password = document.getElementById('pass')
+			if (uname.value.trim() == "" ) {
+				alert("Blank Username")
+				uname.style.border=" solid 3px red" 
+				// this line doesn't work like line 20  document.getElementById('UserLabel').style.visibility="visible"
+				return false ;
+			}
+			else if (password.value.trim() == "") {
+				alert ("Blank password")
+				password.style.border = "solid 3px orange"
+				document.getElementById('passLabel').style.visibility="visible"
+				return false ;
+			}
+			else if(password.value.trim().length<5) {
+				alert("Pass too short")
+				return false ;
+			}
+			else return true ;
+		}
+
+		
+	</script>
+
+	<form action="message.html" onsubmit=" return validate()" > <!-- form tag is used when we want to submit data to server for processing -->
+		<input type="textbox" placeholder =" Enter Username" id="uname">
+		<label id "UserLabel" style="color: red; visibility: hidden;"> Blank Username </label> 
+		<br><br>
+
+		<input type="password" id="pass" placeholder=" Enter Password"> 
+		<label id = "passLabel" style="color: orange ; visibility: hidden;"> Blank Password </label>
+		<br><br>
+	
+
+	<button type="Submit" >Submit</button> 
+
+
+</body>
+</html>

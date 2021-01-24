@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function changeStyling() {
+			var element = document.getElementsByClassName('mypara') ;
+			 for (var x =0;x<element.length;x++)
+			 {
+			 	if (x%2==1) {
+			 		element[x].style.color = 'purple' ;
+			 		element[x].style.fontSize = '2em' ; }
+
+			 	else {
+			 		element[x].style.color = 'red' ;
+			 		element[x].style.fontSize = '2.5em' ; }
+			 }
+			
+			
+
+		}
+		
+	</script>
+<!--  diff here is samajh para 1,3,5 ki styling change karni hai id ke thru to sabko unique id deke 3 baar karna padega same procedure .. orelse 1,3,5 ko 
+same class deke styling change karr sakte hai.. -->
+<p class="mypara">This is paragraph 1 .</p>
+<p>This is paragraph 2 .</p>
+<p class="mypara">This is paragraph 3 .</p>
+<p>This is paragraph 4 .</p>
+<p class="mypara">This is paragraph 5 .</p>
+<a href="#" class="mypara">This is an anchor tag</a> <h2></h2>
+
+<button onclick="changeStyling()">click me </button>
+
+
+
+</body>
+</html>

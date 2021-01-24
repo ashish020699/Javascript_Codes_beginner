@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Taking i/p from user</title>
+</head>
+<body style="background-image: url('801.png');"> 
+
+
+	
+	<script>
+		function fn1()
+		{
+			var user = document.getElementById('text1').value;
+			
+			var pass = document.getElementById('text2').value;
+			
+			if (user==pass)
+			 {
+			 	alert("Username and password match")
+			 }
+			 else {
+			 	alert("Username and password  don't match")
+			 }
+			 alert("Username is "+user)
+			 alert("pass is "+pass)
+		}
+
+		
+	</script>
+	<input placeholder="Username" id = "text1" style="color: red"> <br>
+	<input type="password" placeholder="Enter password" id = "text2"> <br>
+	<button id = "button1" onclick="fn1()"> Click me </button>
+
+</body>
+</html>

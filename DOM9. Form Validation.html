@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- <script> 
+		function validate() {
+		var Username = document.getElementById('uname') ;
+
+		var Password = document.getElementById('pass') ;
+
+		if (Username.value.trim =="" || Password.value.trim=="") {
+			alert("one or both  of the fields are blank");
+			return false ;
+		}
+		else 
+			return true ;
+		
+	}
+		
+
+	</script> -->
+
+		<!-- onsubmit=" return validate()" -->
+	<form action="message.html" > <!-- form tag is used when we want to submit data to server for processing -->
+		<input type="textbox" placeholder =" Enter Username" id="uname" required=" "> <br><br>
+
+		<input type="password" id="pass" placeholder=" ENter Password" required> <br><br>
+	
+
+	<button type="Submit" >Submit</button> 
+	<!-- type submit nahi hoga to webpage refresh nahi hoga ...  -->
+	</form>
+</body>
+</html>
+
+
+<!-- 1 action : iske andar dusre page ka path do.. action here is to redirect to message.html as soon as our credentials are submitted.
+2 on submit : we want to call validate() on submit event and not button click .. that's why we used on submit in form tag as submit button is part of form .
+3 return type true hai to action execute hoga .. false hoga to nahi jaega new page pe
+4  trim se blank values ko as input nahi lega 
+5  required se spaces alllowed hote hai values .. uncomment validate and include unsubmit in action to get js code 
+
+ -->

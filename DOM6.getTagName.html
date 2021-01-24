@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+	<script>
+		function changeStyling() {
+			var para = document.getElementsByTagName("p")
+			para[0].style.fontSize = '55px' ; 
+			para[0].style.backgroundColor = 'cyan' ;
+			para[1].style.color = "blue" ;
+			para[2].style.fontWeight= "bold" ;
+			para[3].style.fontStyle= "italic" ;
+			para[3].style.direction = 'rtl';
+
+
+
+		}
+		
+	</script>
+<body>
+	<p>Paragraph 1 </p>
+	<p>Paragraph 2 </p>
+	<p>Paragraph 3 </p>
+	<p>Paragraph 4 </p>
+	<p>Paragraph 5 </p>
+
+	<button onclick="changeStyling()">Click me</button>
+
+</body>
+</html>
+
+
+
