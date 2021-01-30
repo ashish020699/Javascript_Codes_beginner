@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>effects in jquery</title>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+	<h2 id = "heading1">Selectors in  jquery</h2>
+	<p>para outside div </p>
+	<div id = "firstdiv" class = "mydivs">
+		<p>This is  1st para in 1st division</p>
+		<p>This is  2nt para in 1st division</p>
+	</div>
+	<div id = "seconddiv" class = "mydivs">
+		<p><p>This is  3rd para in 2nd division</p></p>
+	</div>
+	<div id = "thirddiv" class = "mydivs">
+		<ul>
+			<li>List item1</li>
+			<li>List item2</li>
+			<li>List item3</li>
+			<li>List item4</li>
+		</ul>
+	</div>
+	<div id = "thirddiv" class = "notmydivs">
+		<ul>
+			<li>List item1</li>
+			<li>List item2</li>
+			<li>List item3</li>
+			<li>List item4</li>
+		</ul>
+	</div>
+	
+	
+	<button id = "btn1">Click me</button> 
+	<button id = "btn2">Click me 2 </button> 
+	<button id = "btn3">Toggle </button> 
+			<script src="jquery.js"></script>
+	<script>
+		
+	
+		$("#btn1").click(function(){
+			$("#seconddiv").slideUp()
+
+
+			})
+		$("#btn2").click(function(){
+			$("#seconddiv").slideDown()
+
+
+			})
+		$("#btn3").click(function(){
+			$("#firstdiv,#thirddiv").slideToggle()
+
+
+			})
+
+		 // equivalent of line 52 and 53 :
+		// $("#btn3").click(fn1)
+
+		// function fn1 (){			
+		// 	$("#firstdiv").slideToggle()
+		// }
+		
+		
+
+		
+
+		
+	</script>
+		
+</body>
+</html>
+
+<!-- here we understood these effects 
+1. hide()
+2.show()
+3.toggle()
+4.fadeIn()
+5.fadeOut()
+6.fadeToggle()
+7.slideUp()
+8.slideDown()
+9.slideToggle()
+ -->

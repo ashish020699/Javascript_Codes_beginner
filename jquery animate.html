@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animate in jquery</title>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+	<h2 id = "heading1">Custom animations jquery</h2>
+
+	
+	<button id = "btn3">Animate  </button>
+
+
+	
+	<p>para outside div </p>
+	<div id = "firstdiv" class = "mydivs">
+		<p>This is  1st para in 1st division</p>
+		<p>This is  2nt para in 1st division</p>
+	</div>
+	<div id = "seconddiv" class = "mydivs">
+		<p><p>This is  3rd para in 2nd division</p></p>
+	</div>
+	
+	<div class = "mycube" id = "cube">
+		CUBE
+	</div>
+	
+	
+	 
+			<script src="jquery.js"></script>
+	<script>
+		
+	$("#btn3").click(function(){
+		$("#cube").animate({
+			left:'150px',
+			bottom : '100px',
+			opacity :'1',
+			width :'100px',
+			heigth :'100px',
+			fontSize :'2em'
+
+		},1000)
+		
+	})
+		
+
+		
+	</script>
+		
+</body>
+</html>
+<!-- animate() takes 3 parameters : css,speed of animations and callbacking -->
+
