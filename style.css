@@ -1,0 +1,22 @@
+.mydivs{
+	border : 2px solid blue ;
+	margin: 5px ; 
+	padding : 5px ; 
+
+}
+div p {
+	color: red ;
+}
+
+h2 {
+	color :violet;
+}
+.mycube{
+	line-height: 50px ;
+	width : 50px;
+	color: blue;
+	background-color: black ;	
+	opacity: 0.8;
+	padding:20px;
+	position: absolute;
+}

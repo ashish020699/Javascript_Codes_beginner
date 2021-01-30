@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+	<h2 id = "heading1">Selectors in  jquery</h2>
+	<p>para outside div </p>
+	<div id = "firstdiv" class = "mydivs">
+		<p>This is  1st para in 1st division</p>
+		<p>This is  2nt para in 1st division</p>
+	</div>
+	<div id = "seconddiv" class = "mydivs">
+		<p><p>This is  3rd para in 2nd division</p></p>
+	</div>
+	<div id = "thirddiv" class = "mydivs">
+		<ul>
+			<li>List item1</li>
+			<li>List item2</li>
+			<li>List item3</li>
+			<li>List item4</li>
+		</ul>
+	</div>
+	<div id = "thirddiv" class = "notmydivs">
+		<ul>
+			<li>List item1</li>
+			<li>List item2</li>
+			<li>List item3</li>
+			<li>List item4</li>
+		</ul>
+	</div>
+	
+	
+	<button onclick="fn1()" id = "btn1">Click me</button>
+	<script src="jquery.js"></script>
+	<script>
+		function fn1 ()
+		{
+			//$("#heading1").fadeToggle(1000); //fade in and out automatic
+			//$("div  p").fadeToggle() // all p inside div tag  get hidden 
+			//$("p:first").fadeToggle() // sabse pehla vala p hoega toggle 
+			//$(".mydivs:first").fadeToggle() // first mydiv class toggle hoga 
+			//$(".mydivs:even").fadeToggle() // even elements of  mydiv class hoga toggle 
+			$("li:odd").fadeToggle() // odd of li will hide and show 
+
+
+		}
+
+		
+	</script>
+</body>
+</html>
+
+<!-- Selectors in Jquery are of 3 types : 
+1. $("") : this is similar to getElementbyTagname : Sare tags select honge quotations ke andar ke . For eg $("h2").fadeToggle() = sare h2 tags pe effect hoga operations.
+2.$("#") : this is given for individual operations ..  In line 11 h2 ka id heading2 hai matlab uspe opeare karne ke liye syntax is : $("#seconddiv").fadeToggle()
+we can also use multiple id seperated by comma 
+3.$(".") : this is class selectors : This is for combined operations .. For eg you want to select line 9 ,10,11 .. then assign them same class.
+Syntax : $(".mydivs").fadeToggle() -->
